@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.stats-cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    grid-column: 1 / 4;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card .percentage {
+    font-size: 14px;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.disease-updates {
+    grid-column: 1 / 3;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.disease-updates button {
+    height: 50px;
+}
+
+.updates {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.disease-types, .breakdown-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.disease-types h3, .breakdown-section h3 {
+    margin-bottom: 10px;
+}
+
+canvas {
+    margin-top: 20px;
+}
+
+
+.breakdown-section h2 {
+    margin-top: 20px;
+    position: relative;
+    right: 280px;
+    left: 15px;
+}
+.chart-container h2 {
+    margin-top: 20px;
+    position: relative;
+    left: 20px;
+}
+
+#individualsChart {
+    margin-top: 20px; 
+    
+}
+
+.breakdown-section {
+    grid-column: 1 / 4;
+    background: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.charts-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 15px; 
+}
+
+.chart-container {
+    flex: 1; 
+    min-width: 300px; 
+    position: relative;
+    bottom: 15px;
+} 
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px; 
+}
+
+.header-container h2 {
+    margin: 0; 
+    flex: 1; 
+    text-align: center; 
+}

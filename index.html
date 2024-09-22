@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Disease Prediction Dashboard</title>
+    <link rel="stylesheet" href="project.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Disease Prediction Statistics -->
+        <div class="stats-cards">
+            <div class="card">
+                <h3>Total Predictions</h3>
+                <h1>0</h1>           <!-- Will be updated by JS -->
+                <button>View Details</button>
+            </div>
+            <div class="card">
+                <h3>Prediction Accuracy</h3>
+                <h1>92%</h1>
+                <span class="percentage green">+5%</span>
+            </div>
+            <div class="card">
+                <h3>Diseases Detected</h3>
+                <h1>0</h1>             <!-- Will be updated by JS -->
+                <span class="percentage green">+10%</span>
+            </div>
+            <div class="card">
+                <h3>Predictions Today</h3>
+                <h1>23</h1>
+                <span class="percentage green">+8%</span>
+            </div>
+            <div class="card">
+                <h3>Weekly Predictions</h3>
+                <h1>200</h1>
+                <span class="percentage red">-3%</span>
+            </div>
+        </div>
+
+        <!-- Disease Updates and Predictions -->
+        <div class="disease-updates">
+            <h2>Prediction Updates</h2>
+            <div class="updates">
+                <div class="update-stats">
+                    <h3>681</h3> <!-- Positive Predictions -->
+                    <p>Positive Predictions</p>
+                    <span class="percentage green">+15%</span>
+                    <h3>788</h3> <!-- Negative Predictions -->
+                    <p>Negative Predictions</p>
+                </div>
+                <button>Download Report</button>
+            </div>
+            <canvas id="predictionsChart"></canvas>
+        </div>
+
+        <!-- Disease Types Section -->
+        <div class="disease-types">
+            <h2>Top Diseases Predicted</h2>
+            <canvas id="diseaseChart"></canvas>
+        </div>
+
+
+
+
+        <!-- Prediction Breakdown & Overview -->
+        <div class="breakdown-section">
+            <div class="header-container">
+                <h2>Prediction Breakdown</h2>
+                <h2>Individual Overview</h2>
+            </div>
+            <div class="charts-container">
+                <div class="chart-container">
+                    <canvas id="breakdownChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="individualsChart"></canvas>
+                </div>
+            </div>
+            <button id="downloadResults">Download Results</button>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
